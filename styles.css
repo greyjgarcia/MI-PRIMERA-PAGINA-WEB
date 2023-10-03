@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-shadow: 0 0 3px #00bbff, 0 0 5px #00ffc3;
+
+}
+
+  body{
+    font-size: 16px;
+  }
+
+#ad {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*ESTILO GENERAL*/
+
+ .fuente-clara {
+    color:#b59a61
+ }
+
+ .fuente-oscura{
+    color:#22211f
+ }
+ .fuente-acento{
+    color: #b59a61;
+ }
+ nav ul li a{
+    color:blue
+}
+ 
+ /*ENCABEZADO*/
+
+header{
+   background-size:cover ;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction:column;
+ 
+  
+}
+
+body{
+    background-image:url("bahia-de-cata.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/*agregar propiedades al display*/
+
+#ad nav {
+    display:flex;
+    justify-content:end;
+    align-items:center;
+    
+}
+#ad nav ul{
+    display: flex;
+    position:fixed
+    
+}
+#ad nav ul li{
+    padding: 20px;
+}
+
+#ad nav ul li a{
+    display: block;
+    color:blue;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#ad nav ul li a:hover{
+    color:palegreen;
+}
+.selected{
+    color: midnightblue;
+}
+/*menu*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: rgb(28, 8, 177);
+    float: right;
+    line-height: 80px;
+    margin: 40px;
+    cursor: pointer;
+    display: none;
+ }
+
+/*seccion principal*/
+
+.imagen1{
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+   
+}
+
+.seccion-principal{
+    justify-content: center;
+    margin: 100px;
+    font-size:larger;
+
+}
+.seccion-principal h2{
+    text-align: center;
+}
+
+/*familia*/
+
+.familia{
+    text-align: center;
+    font-size:larger;
+}
+.contenedor{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+   
+}
+.imagen01{
+    border-radius: 15%;
+    padding: 10px;
+
+    
+}
+
+.imagen02{
+    border-radius: 15%;
+    padding: 10px;
+ 
+   
+
+}
+
+
+/*trabajo*/
+
+.trabajo{
+    justify-content:center;
+    margin: 100px;
+    text-align: center;
+    font-size:larger;
+
+    }
+.foto1{
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    padding: 20px;
+
+}
+.foto2{
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+/*gustos*/
+
+.gustos h5 {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    font-size:larger;
+}
+
+.gusto p{
+    text-align: center;
+    font-size:larger;
+
+}
+
+
+.contenedor2{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen001{
+    border-radius: 15%;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+   
+}
+
+.imagen002{
+    border-radius: 15%;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+}
+
+/*pie de pgina*/
+
+footer{
+    padding: 20px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  }
+
+
+  #check:checked ~ ul {
+    left: 0;
+    display: block;
+    
+  }
+
+  #ad nav ul li{
+    display: block;
+    margin: 50x 0;
+    line-height: 30px;
+
+  }
+
+  #ad nav ul li a{
+    font-size: 20px;
+  }
+
+@media(max-width: 668px){
+
+}
+#check:checked ~ ul {
+    left: 0;
+    display: block;
+    
+  }
+
+  #ad nav ul li{
+    display: block;
+    margin: 50x 0;
+    line-height: 30px;
+
+  }
+
+  #ad nav ul li a{
+    font-size: 20px;
+  }
+   #check:checked ~ .checkbtn{
+    color: #00bbff;
+   }
+
+   form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+  
+  .button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+  }
+  
+  button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    margin-left: 0.5em;
+  }
